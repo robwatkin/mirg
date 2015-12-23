@@ -3,12 +3,12 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function() {
 
-    var foofs = [];
+    // var foofs = [];
 
-    foofs.push(this.store.createRecord('foof', {name: 'foo one'}));
-    foofs.push(this.store.createRecord('foof', {name: 'foo two'}));
-    foofs.push(this.store.createRecord('foof', {name: 'foo three'}));
+    // foofs.push(this.store.createRecord('foof', {name: 'foo one'}));
+    // foofs.push(this.store.createRecord('foof', {name: 'foo two'}));
+    // foofs.push(this.store.createRecord('foof', {name: 'foo three'}));
 
-    return foofs;
+    return this.store.findAll('foof');
   }
 });
