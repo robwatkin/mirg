@@ -1,18 +1,20 @@
 export default function() {
 
-  this.passthrough('/api/foofs');
+   this.passthrough('/api');
 
-  // this.get('/api/foofs', function() {
-  //   return {
+  this.get('/api/foofs', function() {
+    return {
 
-  //     'foofs': [
-  //       { id: 1, name: 'foo a'},
-  //       { id: 2, name: 'foo b'},
-  //       { id: 3, name: 'foo c'}
-  //     ]
-  //   };
+      'foofs': [
+        { id: 1, name: 'foo a'},
+        { id: 2, name: 'foo b'},
+        { id: 3, name: 'foo c'}
+      ]
+    };
 
-  // })
+  })
+
+
 
   // These comments are here to help you get started. Feel free to delete them.
 

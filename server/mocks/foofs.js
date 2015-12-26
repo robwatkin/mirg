@@ -6,9 +6,9 @@ module.exports = function(app) {
   foofsRouter.get('/', function(req, res) {
     res.send({
       'foofs': [
-        { id: 1, name: 'foo 1'},
-        { id: 2, name: 'foo 2'},
-        { id: 3, name: 'foo 3'}
+        { id: 1, name: 'foo back'},
+        { id: 2, name: 'foo back'},
+        { id: 3, name: 'foo back'}
       ]
     });
   });
